@@ -1,5 +1,6 @@
 <manifest>
 <remote name="github" fetch="https://github.com/tungstenfabric"/>
+<remote name="qblivion" fetch="https://github.com/qblivion"/>
 
 <default revision="refs/heads/master" remote="github"/>
 
@@ -12,7 +13,7 @@
 <project name="tf-common" remote="github" path="src/contrail-common"/>
 <project name="tf-analytics" remote="github" path="src/contrail-analytics"/>
 <project name="tf-api-client" remote="github" path="src/contrail-api-client"/>
-<project name="tf-packages" remote="github" path="tools/packages"/>
+<project name="tf-packages" remote="qblivion" path="tools/packages"/>
 <project name="tf-nova-vif-driver" remote="github" path="openstack/nova_contrail_vif"/>
 <project name="tf-neutron-plugin" remote="github" path="openstack/neutron_plugin"/>
 <project name="tf-heat-plugin" remote="github" path="openstack/contrail-heat"/>
@@ -21,14 +22,6 @@
 <project name="tf-webui-third-party" remote="github" path="contrail-webui-third-party"/>
 <project name="tf-tripleo-puppet" remote="github" path="openstack/contrail-tripleo-puppet"/>
 <project name="tf-deployment-test" remote="github" path="tf-deployment-test"/>
-<!-- vCenter projects -->
-<project name="tf-java-api" remote="github" path="java-api"/>
-<project name="tf-vijava" remote="github" path="vijava"/>
-<project name="tf-vcenter-plugin" remote="github" path="vcenter-plugin"/>
-<project name="tf-vcenter-manager" remote="github" path="vcenter-manager"/>
-<project name="tf-vcenter-fabric-manager" remote="github" path="vcenter-fabric-manager"/>
-<project name="tf-vrouter-java-api" remote="github" path="vrouter-java-api"/>
-<project name="tf-vro-plugin" remote="github" path="vro-plugin"/>
 <!-- Used by OpenContrail CI jobs -->
 <project name="tf-dpdk" remote="github" revision="contrail_dpdk_19_11" path="third_party/dpdk" />
 <!-- contrail-specs repository contains per-branch directories, use master revision explicitly -->
